@@ -1,12 +1,64 @@
-<section id="contact">
-        <h2>Contact</h2>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4"></textarea><br><br>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My IT Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .content img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+    <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4"></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
