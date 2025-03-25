@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My IT Projects</title>
+    <title>Contact Me</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,18 +30,26 @@
         nav a:hover {
             text-decoration: underline;
         }
-        .content {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-        }
-        .content img {
-            width: 200px;
-            height: auto;
-            margin-right: 20px;
-        }
         .container {
             text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #008CBA;
+            color: white;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -50,17 +58,22 @@
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
     </nav>
-    <section id="contact">
-            <h2>Contact</h2>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4"></textarea><br><br>
-                <button type="submit">Send</button>
-            </form>
-        </section>
+    
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form action="send_mail.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
 </body>
 </html>
+
